@@ -3,10 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1" >
-        <link rel="stylesheet" href="src/stylesheets/main.css" />
+        <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="src/assets/stylesheets/main.css" />
         <title>Mel's blog</title>
     </head>
-    <body>
+    <body class="background">
         <div class="container">
             <header>
                 <h1>Mel's Blog</h1>
@@ -14,46 +15,18 @@
             </header>
             <nav>
                 <div class="nav-flex">
-                    <button class="nav-button">Home</button>
-                    <button class="nav-button">Latest Blogpost</button>
-                    <button class="nav-button subscribe">Subscribe</button>
-                </button>
+                    <a href="src/components/blogHome.html" target="content_frame" class="button button-nav"><span>Home</span></a>
+                    <a href="src/components/blogpost.html" target="content_frame" class="button button-nav"><span>Latest Blogpost</span></a>
+                    <a href="src/components/subscribe.html" target="content_frame" class="button button-nav subscribe"><span>Subscribe</span></a>
+                </div>
             </nav>
             <main>
-                <div class="nested-grid">
-                    <div class="card">
-                        <h1>First Blog Post</h1>
-                        <small>Mon 2 March 2020</small>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, ...</p>
-                        <button>Read More</button>
-                    </div>
-                    <div class="card">
-                        <h1>Second Blog Post</h1>
-                        <small>Tue 3 March 2020</small>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, ...</p>
-                        <button>Read More</button>
-                    </div>
-                    <div class="card">
-                        <h1>Third Blog Post</h1>
-                        <small>Wed 4 March 2020</small>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, ...</p>
-                        <button>Read More</button>
-                    </div>
-                    <div class="card">
-                        <h1>Fourth Blog Post</h1>
-                        <small>Fri 6 March 2020</small>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, ...</p>
-                        <button>Read More</button>
-                    </div>
-                    <div class="card">
-                        <h1>Fifth Blog Post</h1>
-                        <small>Sun 8 March 2020</small>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, ...</p>
-                        <button>Read More</button>
-                    </div>
-                </div>
+                <iframe src="src/components/blogHome.html" name="content_frame" width="100%" height="100%" frameborder="0"></iframe>
             </main>
-            <footer>Copyright by Me</footer>
+            <footer>
+                <hr>
+                <small>Copyright by Me</small>
+            </footer>
         </div>
     </body>
 </html>
