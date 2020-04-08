@@ -5,6 +5,16 @@
     justify-items: center;
 }
 
+#card-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid #FFCFAD;
+    float: right;
+    margin-top: 15px;
+    margin-right: 5px;
+}
+
 @media(min-width: 768px) {
     .nested-grid {
         display: grid;
